@@ -1,0 +1,32 @@
+site_name: ECNU Manual
+site_url: https://ecnu-manual.github.io
+
+# 以下为仓库信息
+repo_url: https://github.com/ecnu-manual/ecnu-manual.github.io
+repo_name: ecnu-manual/ecnu-manual.github.io
+
+theme:
+  language: zh
+  name: material
+  custom_dir: overrides # 启用评论需要此行
+  palette: #日夜模式切换
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle: 
+        icon: material/weather-sunny
+        name: 日间模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle: 
+        icon: material/weather-night
+        name: 夜间模式
+  icon:
+    repo: fontawesome/brands/github # 设置git仓库图标
+  features: 
+    - navigation.tabs # 页顶导航栏
+    - navigation.tabs.sticky # 粘性导航栏
+    - toc.follow # 边栏自动滚动
+    - navigation.top # 回到顶部 
+
+nav:
+  - "index.md"
